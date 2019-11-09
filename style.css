@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #272727;
+}
+.header {
+    background-color: #f4f4f4;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+.header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo {
+    font-size: 16px;
+    font-weight: 700;
+    color: #95989a;
+}
+.nav {
+    flex-basis: 80%;;
+}
+.nav__item {
+    color: #95989a;
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 20px;
+    transition: color 0.2s;
+}
+.nav__item:hover {
+    color: #fcde29;
+}
+.login {
+    color: #95989a;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    transition: border 0.2s;
+}
+.login:hover {
+    opacity: 0.8;
+}
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eaeaea;
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+.tabs-logo {
+    color: #95989a;
+    font-size: 20px;
+    font-weight: 700;
+}
+.tabs-menu {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+}
+.tabs-menu__item {
+    margin-left: 15px;
+    position: relative;
+}
+.tabs-menu__item:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: #fcde29;
+    transition: width 0.2s;
+}
+.tabs-menu__item:hover:after {
+    width: 100%;
+}
+.tabs-content {
+    background: #f2f4ff url(./img/tabs-content.png) no-repeat bottom right 135px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 65px;
+    padding: 40px 45px 43px 45px;
+}
+.tabs-content__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.tabs-content__text {
+    font-size: 18px;
+    max-width: 320px;
+    margin-bottom: 90px;
+}
+.tabs-content__button {
+    border-radius: 6px;
+    background-color: #fcde29;
+    padding: 17px 33px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+}
+.tabs-content__button:hover {
+    opacity: 0.8;
+}
+.section-title {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+.card {
+    background-color: #f2f4ff;
+    padding: 23px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.card-full {
+    margin-top: 30px;
+    background: #f2f4ff url(./img/features.png) no-repeat center right 80px;
+    padding-bottom: 60px;
+}
+.card-text {
+    max-width: 485px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.card-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section-card {
+    flex-basis: 26%;
+}
+.card-block {
+    margin-top: 32px;
+    margin-bottom: 19px;
+}
+.section-subtitle {
+    display: block;
+    margin-top: 9px;
+    text-align: center;
+    font-size: 16px;
+}
+.best-bank__card {
+    position: relative;
+    width: 240px;
+    height: 260px;
+    padding: 0;
+}
+.best-bank__card img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.best-card__text {
+    max-width: 198px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.delivery {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.form {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 60px;
+}
+.input {
+    background-color: #f7f8ff;
+    border: none;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    border-radius: 7px;
+    font-size: 16px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.row-100 {
+    flex-basis: 100%;
+}
+.row-50 {
+    flex-basis: 49%;
+}
+.button-block {
+    display: flex;
+    justify-content: flex-end;
+}
+.footer {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+.footer-text {
+    max-width: 670px;
+    margin: auto;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .best-bank__card {
+        width: 180px;
+        height: 200px;
+    }
+    .best-bank__card img {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 760px;
+    }
+    .tabs-content {
+        background-size: 200px;
+    }
+    .card-full {
+        background-position: center right 0;
+    }
+    .card-text {
+        max-width: 300px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    } 
+    .tabs-content {
+        background-size: 150px;
+        background-position: bottom right 20px;
+    }
+    .card-full {
+        background-image: none;
+        text-align: center;
+    }
+    .card-text {
+        max-width: 100%;
+        text-align: center;
+    }
+    .section-card {
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
+    .header-wrap {
+        position: relative;
+    }
+    .nav {
+        display: none;
+    }
+    .tabs-logo {
+        display: none;
+    }
+    .tabs-menu {
+        font-size: 12px;
+    }
+    .tabs-content__title {
+        font-size: 18px;
+    }
+    .tabs-content {
+        background-image: none;
+    }
+    .section-title {
+        font-size: 18px;
+    }
+    .card-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .row {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .button-block {
+        justify-content: center;
+    }
+    .delivery {
+        padding-bottom: 0;
+    }
+}
